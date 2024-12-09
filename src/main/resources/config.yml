@@ -1,0 +1,31 @@
+guild: ""
+token: ""
+bot:
+  status: "Development" #// automatically competing
+  embed:
+    footer: "Server"
+    title: "Thanks for linking!"
+    color: "#FF69B4"
+    field-title: "Rewards Gained:"
+    field: "You received 1 crate key!"
+
+minecraft:
+  commands:
+    link: # list of commands here for when players successfully links.
+      - "broadcast [username] linked there account!" # [username] = player
+  messages:
+    invite:
+      - ""
+      - "<#29A8FF><bold>VERIFY"
+      - ""
+      - " <#29A8FF><bold>|<reset> <white>Go to our discord and enter"
+      - " <#29A8FF><bold>|<reset> <#29A8FF><underlined>/link [code]<reset><white>." # [code] = linking code
+      - ""
+    pending-code: "<red>You alread  y have an active code!"
+    already-linked: "<red>You are already verified!"
+    linked: "<green>You verified your minecraft and discord account!"
+discord:
+  messages:
+    invalid-link: "That link is invalid!"
+    already-linked: "You are already linked!"
+    claimed: "Successfully linked your account!"
