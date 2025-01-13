@@ -1,0 +1,69 @@
+guild:
+token: ""
+bot:
+  status: "Development" #// automatically competing
+  embed: #this is the response of when a player successfully links. (discord)
+    footer: "Server"
+    title: "Thanks for linking!"
+    color: "#FF69B4"
+    field-title: "Rewards Gained:"
+    field: "You received 1 crate key!"
+
+logs:
+  channel-id:
+  embed: #this is the embed builder for logs.
+    footer: "Server"
+    title: "Thanks for linking!"
+    color: "#FF69B4"
+    field-title: "Rewards Gained:"
+    field: "You received 1 crate key!"
+
+utilities:
+  changelog: # send '!util_changelog' to create the utility
+    post-channel: #channel where changelog will be posted
+    post-color: "#FF69B4" #color of message that will be posted
+    embed: #this is the utility embed. (Only admins should see this)
+      title: "Post update"
+      description: "Click me to post a new update!"
+      color: "#FF69B4"
+
+minecraft:
+  # Placeholders:
+  # [username] = player
+  commands:
+    link: # list of commands here for when players successfully links.
+      - "broadcast [username] linked there account!"
+      -
+  # Placeholders:
+  # [code] = linking code
+  messages:
+    invite:
+      - ""
+      - "<#29A8FF><bold>VERIFY"
+      - ""
+      - " <#29A8FF><bold>|<reset> <white>Go to our discord and enter"
+      - " <#29A8FF><bold>|<reset> <#29A8FF><underlined>/link [code]<reset><white>."
+      - ""
+    pending-code: "<red>You already have an active code!"
+    already-linked: "<red>You are already verified!"
+    linked: "<green>You verified your minecraft and discord account!"
+
+discord:
+  change-username: true
+  link: #this isn't required, /link [code] will always be available!
+    channel: #send '!util_link' to post the link emebed
+    embed:
+      title: "Link your account"
+      description: "Click me to enter your code and link!"
+      color: "#FF69B4"
+  roles: #roles that it gives on link
+
+
+  messages:
+    invalid-link: "That link is invalid!"
+    already-linked: "You are already linked!"
+    claimed: "Successfully linked your account!"
+
+last-update:
+  title: ""
+  description: ""
