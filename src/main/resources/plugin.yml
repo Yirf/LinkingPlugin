@@ -1,8 +1,0 @@
-name: LinkPlugin
-version: '1.0'
-main: me.yirf.linkplugin.LinkPlugin
-api-version: '1.21'
-authors: [ Yirf ]
-commands:
-  link:
-    aliases: [verify, verification]
